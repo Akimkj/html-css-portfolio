@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*
+453F78 - azul mariano
+FFC857 - brilho solar
+0F1108 - preto esfumaçado
+EBF2FA - alice azul
+DC6ACF - orquídea
+*/
+
+body {
+    background-image: linear-gradient(to top, #EBF2FA, #FFC857, #453F78, #0F1108);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    width: 700px;
+    padding: 2px; 
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgb(108, 90, 126);
+}
+
+h1 {
+    text-align: center;
+    color: #FCB444;
+    text-shadow: 2px 1px 2px #8a6324;
+    font: normal 400 2.2em 'Permanent Marker', cursive;
+}
+
+h2 {
+    color: #DC6ACF;
+    font: normal 400 1.5em 'Permanent Marker', cursive;
+}
+
+p {
+    text-align: justify;
+    font: normal 400 1em 'Roboto', sans-serif;
+}

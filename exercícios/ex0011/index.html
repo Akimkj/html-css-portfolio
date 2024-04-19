@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+        <picture>
+            <source media="(max-width: 650px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 950px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexivel">
+        </picture>
+    <h2>Testando</h2>
+        <picture>
+            <source media="(max-width: 650px)" srcset="imagens/nasa-hubble-300.jpg" type="image/jpeg">
+            <source media="(max-width: 950px)" srcset="imagens/nasa-hubble-600.jpg" type="image/jpeg">
+            <img src="imagens/nasa-hubble-900.jpg" alt="Telescópio Espacial Hubble">
+        </picture>
+    <h1>Reproduzindo aúdios</h1>
+        <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+        <!--Formatos de mídia para ter 100% de compatibilidade com todos os navegadores: MP3 WAV (mt pesado) EGG-->
+        <audio preload="metadata" controls>
+            <source src="midia/putting-on-the-ritz.mp3" type="audio/mpeg">
+            <source src="midia/putting-on-the-ritz.ogg" type="audio/ogg">
+            <source src="midia/putting-on-the-ritz.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/putting-on-the-ritz.mp3" download="putting-on-the-ritz.mp3" type="audio/mpeg">Clique aqui para baixar o aúdio em formato mp3.</a></p>
+        </audio>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Clique aqui para baixar o aúdio em formato mp3.</a></p>
+        </audio>
+</body>
+</html>

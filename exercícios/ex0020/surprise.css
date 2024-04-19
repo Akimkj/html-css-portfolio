@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(203, 226, 247);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(202, 20, 20);
+}
+
+p {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+div {
+    width: 140px;
+    height: 40px;
+    background-color: aquamarine;
+}
+
+div > p {
+    display: none;
+    width: 600px;
+}
+
+div:hover > P {
+    display: block;
+}

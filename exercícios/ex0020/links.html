@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+        /*A pseudo-class "visited" é bastante usada em âncoras/links, ela serve para ativar uma configuração de estilo quando uma unidade de elemento for visitada.*/
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        
+        a:active {
+            color: yellow;
+        }
+        /*a pseudo-class "active" é um estado de elemento que serve para ativar uma configuração de estilo quando uma unidade de elemento for ATIVADA, ou seja... Quando clicarmos nela por exemplo.*/
+
+
+        /*referente aos Pseudo-elementos , eles podem agir nas classes, nos elementos, nos id's e etc... Eles mexem diretamente no CONTEÚDO PERIFÉRICO DO ELEMENTO . No CSS, os pseudo-elementos são representados por " dois pontos " DUPLOS ( :: )*/
+        a::after {
+            content: ' ∌' ;
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgray;
+        }
+        /*Suponha que queremos que todo link no final tenha uma indicação de que é um link, podemos abrir um seletor personalizado para links e usar o pseudo-elemento ( :: ) " after " para fazer isso.*/
+        a::before {
+            content: '∉ ' ;
+            font-weight: normal;
+            text-decoration: none;
+            color: darkgray;
+        }
+        /*Também existe o pseudo-elemento " before ", que funciona como o "after" mas de forma oposta, fazendo com que manipulemos o conteúdo periférico que antecede os elementos.*/
+
+        .especial::before {
+            content: '⟼';
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal no YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

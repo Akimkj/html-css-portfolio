@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(163, 162, 162);
+        }
+        header {
+            height: 70px;
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+        header > h1 {
+            text-align: center;
+            margin: 10px;
+        }
+
+        header > nav {
+            background-color: rgb(126, 120, 120);
+            padding: 1px;
+            box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.507);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 4px 0.8px #0000009e;
+        }
+
+        article {
+            background-color: rgb(184, 184, 184);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(110, 110, 110);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site</h1>
+        <nav>
+            <a href="#">link1</a> 
+            <a href="#">link2</a> 
+            <a href="#">link3</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Ciencia e tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A obcaecati ex sit quod maiores error odit. Saepe et sit qui, facilis quam dolore, necessitatibus, nisi provident eius enim beatae sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam et nihil distinctio id eveniet cumque, obcaecati exercitationem culpa repudiandae dicta fugiat praesentium quas natus rerum inventore odit! Porro, corrupti sint!</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Elon musk idiota</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ratione, ducimus magni in excepturi alias dolores nihil, sed unde, expedita magnam harum! Commodi cumque velit iste veniam, in minima ipsa!</p>
+                <aside>
+                    <p>Artigo escrito por samuel</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por MIKA</p>
+    </footer>
+    <div id="bola">
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: rgba(201, 166, 166, 0.658);
+    width: 250px;
+    height: min-content;
+    border: 1px solid rgb(131, 108, 108);
+}
+
+div > #menu {
+    display: none;
+}
+
+div:hover > #menu {
+    display: block;
+}
+
+.opcao:hover {
+    background-color: aliceblue;
+}
+
+.opcao::after {
+    content: '[link]';
+    color: rgba(58, 61, 60, 0.795);
+    
+}
+
+h1 {
+    text-align: center;
+    
+}

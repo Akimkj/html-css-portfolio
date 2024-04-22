@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
-.centralizar-all{
+main{
     text-align: center;
+}
+
+a {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }

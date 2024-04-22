@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.centralizar-all{
+    text-align: center;
+}

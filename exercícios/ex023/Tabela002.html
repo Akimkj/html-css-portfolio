@@ -24,6 +24,18 @@
         .num {
             text-align: right;
         }
+
+        caption {
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 1.5em;
+            border-radius: 5px 5px 0px 0px;
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +44,7 @@
     #ANATOMIA PARA TABELAS GRANDES:
 
     TABLE
+        CAPTION
         THEAD (opcional)
             TR, TD, TH
         TBODY
@@ -42,9 +55,10 @@
     #Estilos da tag <th>
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -158,7 +172,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>

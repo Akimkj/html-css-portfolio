@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo" autocomplete="username">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="Média do Aluno" size="15" step="0.5">
+            <!--anotar depois sobre o parâmetro "step"-->
+        </p>
+        <p>
+            <input type="submit" value="Enivar">
+            <input type="reset" value="Limpar tudo">
+        </p>
+
+    </form>
+</body>
+</html>

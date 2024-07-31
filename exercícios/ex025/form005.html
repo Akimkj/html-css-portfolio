@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Checkbox and radio</h1>
+    <form action="cadastro.java" method="get">
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="basquete" id="icheckbas"><label for="icheckbas">Basquete</label><br>
+            <input type="checkbox" name="volei" id="icheckvol"><label for="icheckvol">Vôlei</label><br>
+            <input type="checkbox" name="futebol" id="icheckfut"><label for="icheckfut">Futebol</label><br>
+            <input type="checkbox" name="queimada" id="icheckquei"><label for="icheckquei">Queimada</label><br>
+            <input type="checkbox" name="skate" id="icheckskate"><label for="icheckskate">Skate</label><br>
+            <input type="checkbox" name="ginastica" id="icheckgin"><label for="icheckgin">Ginástica</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="gender" id="igenderm" value="Men"><label for="igenderm">Homem</label><br>
+            <input type="radio" name="gender" id="igenderw" value="Woman"><label for="igenderw">Mulher</label><br>
+            <input type="radio" name="gender" id="igendernb" value="Non-binary" checked><label for="igendernb">Não-binário</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

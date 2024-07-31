@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <form action="cadastro.java" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados para contato</legend>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Ex: usuário01@gmail.com" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(XX) XXXXX-XXXX" size="14" pattern="\([0-9{2,3}]\)([\S])[0-9]{4,6}-[0-9]{4}" autocomplete="tel" required>
+            </p>
+            <p>
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

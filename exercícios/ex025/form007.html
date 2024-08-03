@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.java" method="post" autocomplete="on">
+        <p>
+            <label for="iescola">Nível de escolaridade:</label>
+            <select name="nivelescola" id="iescola">
+                <optgroup label="Escolaridade">
+                    <option value="infIncomplete">Infantil incompleto</option>
+                    <option value="infComplete">Infantil completo</option>
+                    <option value="fundIncomplete">Fundamental incompleto</option>
+                    <option value="fundComplete">Fundamental completo</option>
+                    <option value="EMincomplete">Ensino médio incompleto</option>
+                    <option value="EMcomplete">Ensino médio completo</option>
+                    <option value="gradincomplete">Graduação incompleta</option>
+                    <option value="gradcomplete">Graduação completa</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="istatus">Ocupação:</label>
+            <input type="text" name="status" id="istatus" list="lstocup">
+            <datalist id="lstocup">
+                <option>Estudante</option>
+                <option>Professor(a/e)</option>
+                <option>Coordenador(a/e)</option>
+                <option>Diretor(a/e)</option>
+                <option>Servidor(a/e)</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="iobs">Observação:</label><br>
+            <textarea name="obs" id="iobs" cols="50" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

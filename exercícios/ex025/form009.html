@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <h1>Example</h1>
+    <form action="cadastro.java" method="get" oninput="inota.innerHTML = Number(ivalor.value)">
+        <p>
+            <label for="ivalor">Nota:</label>
+            <input type="range" name="valor" id="ivalor" min="0" max="10" required value="5">
+            <output id="inota"></output>
+        </p>
+    </form>
+</body>
+</html>

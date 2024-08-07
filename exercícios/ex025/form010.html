@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example forms</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.java" method="get">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="0" max="2024" required oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade"></output>
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let anoAtual = new Date().getFullYear()
+            iidade.innerHTML = Number(anoAtual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>

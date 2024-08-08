@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo de Formulário</title>
+</head>
+<body>
+    <h1>EletrônicaJS</h1>
+    <main>
+        <form action="cadastro.java" method="post" autocomplete="on">
+            <fieldset>
+                <legend id="ienterJS">Entre na EletrônicaJS</legend>
+                <div class="form">
+                    <label for="ilogin">Login:</label>
+                    <input type="tel" name="login" id="ilogin" placeholder="Número de telefone" required pattern="\([0-9{2,3}]\)([\S])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel">
+                </div>
+                <div class="form">
+                    <label for="icurrentPassword">Senha:</label>
+                    <input type="password" name="currentPassword" id="icurrentPassword" autocomplete="current-password" minlength="8" maxlength="15" placeholder="Senha de 8 a 15 caracteres">
+                </div>
+                <div class="form">
+                    <input type="submit" value="Enviar">
+                </div>
+                <hr>
+                <a href="#" id="cadastrolink">Cadastre-se</a>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

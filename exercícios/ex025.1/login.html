@@ -13,17 +13,18 @@
                 <legend id="ienterJS">Entre na EletrônicaJS</legend>
                 <div class="form">
                     <label for="ilogin">Login:</label>
-                    <input type="tel" name="login" id="ilogin" placeholder="Número de telefone" required pattern="\([0-9{2,3}]\)([\S])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel">
+                    <input type="tel" name="login" id="ilogin" placeholder="Número de telefone" pattern="\([0-9]{2,3}\)([\S])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel" required>
                 </div>
                 <div class="form">
                     <label for="icurrentPassword">Senha:</label>
-                    <input type="password" name="currentPassword" id="icurrentPassword" autocomplete="current-password" minlength="8" maxlength="15" placeholder="Senha de 8 a 15 caracteres">
+                    <input type="password" name="currentPassword" id="icurrentPassword" autocomplete="current-password" minlength="8" maxlength="15" placeholder="Senha de 8 a 15 caracteres" required>
                 </div>
                 <div class="form">
                     <input type="submit" value="Enviar">
                 </div>
                 <hr>
-                <a href="#" id="cadastrolink">Cadastre-se</a>
+                <h2 id="criarcadastro">Você não tem cadastro? Crie agora!</h2>
+                <a href="#" id="cadastrolink">Criar conta</a>
             </fieldset>
         </form>
     </main>

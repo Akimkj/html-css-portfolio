@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protótipo de Formulário</title>
+    <title>Protótipo de Formulário - Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        header {
+            padding: 5em;
+        }
+    </style>
 </head>
 <body>
-    <h1>EletrônicaJS</h1>
+    <header>
+        <h1>ELETRÔNICA JS</h1>
+    </header>
     <main>
-        <form action="cadastro.java" method="post" autocomplete="on">
+        <h2>Entre na EletrônicaJS</h2>
+        <form action="pags/login.java" method="post" autocomplete="on">
             <fieldset>
-                <legend id="ienterJS">Entre na EletrônicaJS</legend>
                 <div class="form">
-                    <label for="ilogin">Login:</label>
-                    <input type="tel" name="login" id="ilogin" placeholder="Número de telefone" pattern="\([0-9]{2,3}\)([\S])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel" required>
+                    <label for="ilogintel">Telefone:</label>
+                    <input type="tel" name="logintel" id="ilogintel" placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel" required>
                 </div>
                 <div class="form">
                     <label for="icurrentPassword">Senha:</label>
                     <input type="password" name="currentPassword" id="icurrentPassword" autocomplete="current-password" minlength="8" maxlength="15" placeholder="Senha de 8 a 15 caracteres" required>
                 </div>
-                <div class="form">
-                    <input type="submit" value="Enviar">
-                </div>
-                <hr>
-                <h2 id="criarcadastro">Você não tem cadastro? Crie agora!</h2>
-                <a href="pags/cadastro.html" href="pt-br" id="cadastrolink" target="_self" rel="next">Criar conta</a>
             </fieldset>
+            <div class="form">
+                <input type="submit" value="Entrar na conta">
+            </div>
         </form>
+        
+        <h3 id="criarcadastro">Você não tem cadastro? Crie agora!</h3>
+            <a href="pags/cadastro.html" href="pt-br" id="cadastrolink" target="_self" rel="next">Criar conta</a>
     </main>
 </body>
 </html>

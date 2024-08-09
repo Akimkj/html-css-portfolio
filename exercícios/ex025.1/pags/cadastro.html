@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo de Formulário - Cadastro</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <style>
+        h2 {
+            padding-bottom: 0px;
+        }
+        
+        a {
+            border-top: 1px solid rgba(0, 0, 0, 0.527);
+            margin-top: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ELETRÔNICA JS</h1>
+    </header>
+    <main>
+        <h2>Criar uma nova conta</h2>
+            <p>É rapidinho, viu?</p>
+        <form action="cadastro.java" method="post" autocomplete="on">
+            <fieldset>
+                <div class="form">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" minlength="3" maxlength="20" required autocomplete="given-name">
+                </div>
+                <div class="form">
+                    <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome" minlength="3" maxlength="20" required autocomplete="family-name">
+                </div>
+               <div class="form">
+                   <label for="icadastrotel">Telefone:</label>
+                   <input type="tel" name="cadastrotel" id="icadastrotel" placeholder="(XX) XXXXX-XXXX" pattern="\([0-9]{2}\)([\s])[0-9]{4,6}-[0-9]{4}" size="14" autocomplete="tel" required>
+               </div>
+               <div class="form">
+                    <label for="inewpassword">Nova senha:</label>
+                    <input type="password" name="newPassword" id="inewPassword" autocomplete="new-password" minlength="8" maxlength="15" placeholder="Senha de 8 a 15 caracteres" required>
+               </div>
+            </fieldset>
+            <fieldset>
+                <legend>Gênero</legend>
+                <div class="genderblock">
+                    <input type="radio" name="gender" id="igendermen" value="men"> <label for="igendermen">Homem</label>
+                </div>
+                <div class="genderblock">
+                    <input type="radio" name="gender" id="igenderwoman" value="woman"> 
+                    <label for="igenderwoman">Mulher</label>
+                </div>
+                <div class="genderblock">
+                    <input type="radio" name="gender" id="igendernb" value="non-binary" checked> 
+                    <label for="igendernb" >Não-Binário</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações adicionais</legend>
+                <div class="form">
+                    <label for="ibirth">Data de nascimento:</label>
+                    <input type="date" name="birth" id="ibirth">
+                </div>
+                <div class="form">
+                    <label for="iuf">Unidade Federativa:</label>
+                    <select id="iuf" name="uf">
+                        <optgroup label="Região Norte">
+                            <option value="AC">Acre</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Região Centro-Oeste">
+                            <option value="DF">Distrito Federal</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MT">Mato Grosso</option>
+                        </optgroup>
+                        <optgroup label="Região Sudeste">
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <input type="submit" value="Criar conta">
+        </form>
+        <a href="../login.html" hreflang="pt-br" target="_self" rel="prev" id="loginlink">Já tem uma conta?</a>
+    </main>    
+</body>
+</html>

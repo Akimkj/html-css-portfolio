@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Estilos para impressora*/
+
+* {
+    margin: 20px;
+    padding: 10px;
+}
+
+html, body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+    /*a declaração acima afirma que, no modelo de impressão, */
+}
+
+article::after {
+    content: 'Esse arquivo foi impresso através do site www.mikakj.com';
+    font-weight: bolder;
+}

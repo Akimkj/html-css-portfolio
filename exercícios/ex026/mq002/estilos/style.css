@@ -1,3 +1,20 @@
 @charset "UTF-8";
 
 /*Configurações gerais*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+   background-color: violet;
+   height: 100%;
+}
+
+h1 {
+    color: rgb(255, 245, 245);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+    font: normal bolder 1.6em 'Segoe UI','Arial Narrow Bold', sans-serif;
+    padding: 0.6em 0em 0em 1em;
+}

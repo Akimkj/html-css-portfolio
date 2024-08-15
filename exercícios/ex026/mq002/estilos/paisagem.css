@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*Configurações deitado*/
+
+body, html {
+    background: black url(../imgs/cev-landscape.jpg) center center no-repeat fixed;
+    background-size: cover;
+}

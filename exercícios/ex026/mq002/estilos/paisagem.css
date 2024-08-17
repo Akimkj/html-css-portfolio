@@ -3,6 +3,6 @@
 /*Configurações deitado*/
 
 body, html {
-    background: black url(../imgs/cev-landscape.jpg) center center no-repeat fixed;
-    background-size: cover;
+    background-image: url(../imgs/cev-landscape.jpg);
+    background-position: left bottom;
 }

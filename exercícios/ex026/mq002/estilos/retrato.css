@@ -3,6 +3,5 @@
 /*Configurações em pé*/
 
 body, html {
-    background: white url(../imgs/cev-portrait.jpg) center center no-repeat fixed;
-    background-size: cover;
+    background-image: url(../imgs/cev-portrait.jpg);
 }

@@ -8,7 +8,8 @@
 }
 
 body, html {
-   background-color: violet;
+   background: #233EFF no-repeat center bottom scroll;
+   background-size: contain;
    height: 100vh;
 }
 

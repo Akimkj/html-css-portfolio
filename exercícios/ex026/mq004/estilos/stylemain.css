@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background: lightblue url(../imgs/back-phone.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    font: Normal small-caps bold 2em Arial, helvetica, sans-serif;
+}
+
+#itablet {display: none;}
+#ipc {display: none;}
+#itv {display: none;}
+#iprint {display: none;}

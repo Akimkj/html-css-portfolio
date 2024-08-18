@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body, html {
+    background: lightblue url(../imgs/back-tablet.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#iphone {display: none;}
+#itablet {display: inline-block;}
+#ipc {display: none;}
+#itv {display: none;}
+#iprint {display: none;}

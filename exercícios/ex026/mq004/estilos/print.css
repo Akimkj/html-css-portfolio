@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body, html {
+    background: rgb(255, 255, 255) url(../imgs/back-print.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#iphone {display: none;}
+#itablet {display: none;}
+#ipc {display: none;}
+#itv {display: none;}
+#iprint {display: inline-block;}

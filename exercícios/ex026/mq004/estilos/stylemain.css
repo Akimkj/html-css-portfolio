@@ -14,12 +14,16 @@ body, html {
 main {
     background-color: white;
     text-align: center;
+    width: 400px;
+    margin: auto;
 }
 
 h1 {
     font: Normal small-caps bold 2em Arial, helvetica, sans-serif;
+    padding-top: 1rem;
 }
 
+#iphone {display: inline-block}
 #itablet {display: none;}
 #ipc {display: none;}
 #itv {display: none;}

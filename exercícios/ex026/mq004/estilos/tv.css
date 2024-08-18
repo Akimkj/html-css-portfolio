@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body, html {
+    background: lightblue url(../imgs/back-tv.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#iphone {display: none;}
+#itablet {display: none;}
+#ipc {display: none;}
+#itv {display: inline-block;}
+#iprint {display: none;}

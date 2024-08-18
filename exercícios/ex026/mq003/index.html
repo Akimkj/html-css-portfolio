@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    <style>
+        @media all {
+            * {
+            padding: 0px;
+            margin: 0px;
+            }
+
+            body, html {
+            background: #233EFF no-repeat center bottom scroll;
+            background-size: contain;
+            height: 100vh;
+            }
+
+            h1 {
+            color: rgb(255, 245, 245);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.295);
+            font: normal bolder 1.6em 'Segoe UI','Arial Narrow Bold', sans-serif;
+            padding: 0.6em 0em 0em 1em;
+            }
+        }
+        
+        @media screen and (orientation: portrait) {
+        
+            body, html {
+                background-image: url(imgs/cev-portrait.jpg);
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+
+            body, html {
+            background-image: url(imgs/cev-landscape.jpg);
+            background-position: left bottom;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Mude a orientação do seu dispositivo</h1>

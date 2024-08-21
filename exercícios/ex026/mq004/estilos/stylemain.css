@@ -8,13 +8,13 @@
 body, html {
     background: lightblue url(../imgs/back-phone.jpg) no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 main {
     background-color: white;
     text-align: center;
-    width: 400px;
+    width: 300px;
     margin: auto;
 }
 

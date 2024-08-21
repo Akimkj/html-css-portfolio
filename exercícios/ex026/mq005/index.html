@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
     <link rel="stylesheet" href="estilos/stylemain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!--
+    1. Uso do google fonts para conseguir icones: anotação no caderno e flashcards.
+    2. Manual para conseguir colocar os icones do google fonts no código HTML: flashcards e anotação no caderno.
+    3. Guia do desenvolvedor do Google para icones: flashcards e anotação no caderno.
+    4. Passo a passo de criar o menu hamburguer: anotação e flashcard.
+    -->
 </head>
 <body>
     <header>
         <h1 id="titulo-principal">Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menuitens">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -29,5 +37,15 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ut porro voluptatum? Sequi expedita a cupiditate sapiente suscipit accusamus cum saepe, ducimus maiores optio ad atque doloremque perspiciatis, officiis ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus optio numquam natus sed, commodi distinctio praesentium placeat quasi eos! Labore hic optio velit, quae est mollitia officia cumque nihil dicta!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if ( menuitens.style.display == 'block') {
+                menuitens.style.display = 'none'
+            }
+            else {
+                menuitens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

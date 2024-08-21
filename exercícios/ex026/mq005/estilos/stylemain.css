@@ -47,8 +47,22 @@ p {
     text-indent: 1.5em;
 }
 
-menu {
+#burguer {
+    color: white;
+    background-color: rgb(61, 61, 61);
     display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: rgb(240, 240, 240);
+    color: rgb(61, 61, 61);
+}
+
+menu {
+    display: none;
 }
 
 menu ul {

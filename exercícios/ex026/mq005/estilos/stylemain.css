@@ -15,22 +15,23 @@ body, html {
 
 header {
     background-color: gray;
-    padding: 10px 40px 40px 40px;
+    padding: 10px 0px 5px 0px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
 }
 
 #titulo-principal {
     text-align: center;
-    font-size: 1.6em
+    font-size: 1.6em;
+    padding-bottom: 0.5em;
 }
 
 /*...*/
 
 main {
     min-width: 300px;
-    max-width: 600px;
+    max-width: 768px;
     background-color: white;
-    margin: 5px auto 5px auto;
+    margin: 10px auto 10px auto;
     padding: 1.5em;
     border-radius: 8px;
     box-shadow: 1px 1px 1px rgb(196, 192, 192);
@@ -44,4 +45,22 @@ p {
     padding-top: 1em;
     text-align: justify;
     text-indent: 1.5em;
+}
+
+menu {
+    display: block;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid gray;
+    background-color: rgb(102, 102, 102);
 }

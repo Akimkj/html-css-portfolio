@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body, html {
+    height: 100%;
+    background-color: rgb(224, 221, 221);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gray;
+    padding: 10px 40px 40px 40px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
+}
+
+#titulo-principal {
+    text-align: center;
+    font-size: 1.6em
+}
+
+/*...*/
+
+main {
+    min-width: 300px;
+    max-width: 600px;
+    background-color: white;
+    margin: 5px auto 5px auto;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgb(196, 192, 192);
+}
+
+#topico {
+    font-size: 1.2em;
+}
+
+p {
+    padding-top: 1em;
+    text-align: justify;
+    text-indent: 1.5em;
+}

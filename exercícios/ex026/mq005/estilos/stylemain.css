@@ -29,7 +29,7 @@ header {
 
 main {
     min-width: 300px;
-    max-width: 768px;
+    max-width: 600px;
     background-color: white;
     margin: 10px auto 10px auto;
     padding: 1.5em;
@@ -77,4 +77,8 @@ nav > ul > li > a {
     text-align: center;
     border-top: 2px solid gray;
     background-color: rgb(102, 102, 102);
+}
+
+nav > ul > li > a:hover {
+    background-color: gray;
 }

@@ -6,8 +6,9 @@
     <title>Como surgiu o mascote do android?</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1 id="titulo-principal">
             Curiosidades de tecnologia
@@ -15,12 +16,19 @@
         <p>
             Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
         </p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Curiosidades</a>
-            <a href="#">Fale conosco</a>
-        </nav>
+        <span class="material-symbols-outlined" id="menuicon" onclick="menuOn()">menu</span>
+        <div id="areamenu">
+            <menu id="menunav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a>
+                        <li><a href="#">Notícias</a>
+                        <li><a href="#">Curiosidades</a>
+                        <li><a href="#">Fale conosco</a>
+                    </ul>
+                </nav>
+            </menu>
+        </div>
     </header>
     <main>
         <section id="conteudo-principal">
@@ -112,5 +120,24 @@
             Site recriado por <a href="https://www.instagram.com/akim_kj/" hreflang="pt-br" target="_blank" rel="noopener noreferrer">Mika Marques</a> para o <a href="https://www.cursoemvideo.com/" hreflang="pt-br" target="_blank" rel="noopener noreferrer">CursoEmVídeo</a>
         </p>
     </footer>
+    <script>
+        function menuOn() {
+            if (areamenu.style.display == 'block') {
+                areamenu.style.display = 'none'
+            }
+            else {
+                areamenu.style.display = 'block'
+            }
+        }
+
+        function mudarTamanho() {
+            if (window.innerWidth >= 768) {
+                areamenu.style.display = 'block'
+            }
+            else {
+                areamenu.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

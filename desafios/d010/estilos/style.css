@@ -46,37 +46,43 @@ header {
 
 header > p {
     text-align: center;
-    margin: 0px auto 20px auto;
+    display: block;
     text-shadow: 1px 1px 2px #00000096;
+    padding: 0px 3em;
 }
 
-nav {
+menu {
     margin: 50px 10px 0px 10px;
-    padding: 0px 0px 5px 0px;
+
 }
 
-nav > a {
+nav > ul > li > a {
     text-decoration: none;
     font: normal bolder 1em var(--fonte-padrao);
-    color:var(--cor0);
+    color: var(--cor0);
     padding: 10px;
     border-radius: 4px;
-    transition-duration: 1s;
 }
 
-nav > a:hover {
+nav > ul > li > a:hover {
     background-color: #3ddc853d;
+    transition-duration: 1s;
 
 }
 
-nav > a:active {
+menu li {
+    display: inline-block;
+}
+
+nav > ul > li > a:active {
     color: rgb(217, 255, 0);
+    transition-duration: 0s;
 }
 
 main {
     background-color: white;
     margin: 0px auto 0px auto;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 980px;
     box-shadow: 1px 1px 4px rgb(0 0 0 / 61%);
     padding: 20px;
@@ -127,7 +133,7 @@ p > a {
     font: normal bolder 1em var(--fonte-padrao);
     color: var(--cor4);
     padding: 2px;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 p > a::after {
@@ -208,4 +214,64 @@ strong {
     color: var(--cor5);
     font-weight: bolder;
     text-shadow:  1px 2px 2px rgba(0, 0, 0, 0.274);
+}
+
+#menuicon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #menuicon {
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 2.2em;
+        cursor: pointer;
+    }
+
+    #menuicon:hover {
+        border-radius: 50%;
+        background-color: rgba(19, 19, 19, 0.233);
+        background-position: center right
+    }
+
+    #areamenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        background-color: white;
+        margin: -1px 0px 0px 0px;
+    }
+
+    menu li {
+        list-style-type: none;
+        text-align: center;
+        display: block;
+        border-top: 1px solid rgb(119, 119, 119);
+        margin-top: 1px;
+        
+    }
+
+    menu li:hover {
+        color: white;
+        background-color: var(--cor1);
+    }
+
+    nav > ul > li > a:hover {
+        background-color: var(--cor1);
+    }
+    
+    nav > ul > li > a:active {
+        color: aqua;
+        transition-duration: 0s;
+    }
+
+    nav > ul > li > a { 
+        color: black;
+        display: block;
+    }
+
 }

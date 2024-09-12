@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .container {
+            background-color: violet;
+            display: flex;
+        }
+
+        .item {
+            background-color: yellow;
+            height: 20px;
+            padding: 0.5em;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+
+        #A {
+            order: 10;
+        }
+        #B {
+            order: -10;
+        }
+        #C {
+            order: 0;
+        }
+        #D {
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="A">A</div>
+        <div class="item" id="B">B</div>
+        <div class="item" id="C">C</div>
+        <div class="item" id="D">D</div>
+    </div>
+</body>
+</html>

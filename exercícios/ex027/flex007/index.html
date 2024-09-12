@@ -8,37 +8,49 @@
         .container {
             background-color: violet;
             display: flex;
+            flex-flow: row nowrap;
         }
 
         .item {
             background-color: yellow;
             height: 20px;
-            padding: 0.5em;
+            padding: 1rem;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
         }
 
-        #A {
-            order: 10;
+        #i1 {
+            order: 9;
         }
-        #B {
-            order: -10;
+        #i2 {
+            order: -1;
         }
-        #C {
-            order: 0;
+        #i3 {
+            order: 4;
         }
-        #D {
+        #i4 {
+            order: 2;
+        }
+        #i5 {
+            order: 3;
+        }
+        #i6 {
+            order: 5;
+        }
+        #i7 {
             order: 2;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item" id="A">A</div>
-        <div class="item" id="B">B</div>
-        <div class="item" id="C">C</div>
-        <div class="item" id="D">D</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>

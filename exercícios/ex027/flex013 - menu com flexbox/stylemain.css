@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+:root {
+    --fonteTituloPrincipal: Verdana, Geneva, Tahoma, sans-serif;
+    --fontSubTitulo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontGeral: Arial, Helvetica, sans-serif;
+    --cor1: rgb(221, 221, 221);
+    --cor2: rgb(126, 126, 126);
+    --cor3: rgb(8, 8, 8);
+    --whitespace: rgba(255, 254, 253, 0.863);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fontGeral);
+}
+
+body, html {
+    background-color: var(--cor1);
+    height: 100%;
+}
+
+header {
+    background-color: var(--cor2);
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
+}
+
+/*#iconmenu {
+    font-weight: 500;
+    font-size: 2.1rem;
+    transform: translateY(-2px);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    align-self: flex-end;
+    transform: translateY(-1.2em);
+}
+
+#iconmenu:hover {
+    background-color: rgb(121, 121, 121);
+}*/
+
+#nomeMarca {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.39);
+    margin-bottom: 0.5em;
+}
+
+#navbar {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    margin: 0.2em;
+    background-color: var(--cor3);
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    width: 98%;
+    background-color: var(--whitespace);
+    padding: 1.3em;
+    margin: 0.5em auto 0.5em auto;
+    border-radius: 0.5em;
+}
+
+h2 {
+    font-family: var(--fontSubTitulo);
+    margin-bottom: 0.4em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.144);
+}
+
+p {
+    text-align: justify;
+    padding-bottom: 0.4em;
+    line-height: 1.2em;
+    text-indent: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 70%;
+    }
+
+    header {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    #nomeMarca {
+        margin-bottom: 0;
+        flex: 0.5;
+    }
+
+    #navbar {
+        flex: 2;
+        align-self: flex-end
+    }
+
+    ul {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+}

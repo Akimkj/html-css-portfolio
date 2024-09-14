@@ -28,12 +28,12 @@ header {
     color: white;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
     padding: 1em;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
 }
 
-/*#iconmenu {
+#iconMenu {
     font-weight: 500;
     font-size: 2.1rem;
     transform: translateY(-2px);
@@ -44,7 +44,7 @@ header {
     transform: translateY(-1.2em);
 }
 
-#iconmenu:hover {
+#iconMenu:hover {
     background-color: rgb(121, 121, 121);
 }*/
 
@@ -55,6 +55,7 @@ header {
 
 #navbar {
     width: 100%;
+    display: none;
 }
 
 ul {
@@ -114,6 +115,10 @@ p {
     #nomeMarca {
         margin-bottom: 0;
         flex: 0.5;
+    }
+
+    #iconMenu {
+        display: none;
     }
 
     #navbar {

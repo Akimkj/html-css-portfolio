@@ -20,6 +20,7 @@
 body, html {
     background-color: var(--cor1);
     height: 100%;
+    width: 100%;
 }
 
 header {
@@ -106,7 +107,7 @@ p {
     }
 
     header {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
     }
 
@@ -117,12 +118,12 @@ p {
 
     #navbar {
         flex: 2;
-        align-self: flex-end
+        align-self: flex-end;
     }
 
     ul {
-        flex-flow: row wrap;
-        justify-content: space-around;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
         align-content: flex-start;
     }
 }

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com flexbox</title>
     <link rel="stylesheet" href="stylemain.css" media="all">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1 id="nomeMarca">Meu site</h1>
+        <span class="material-symbols-outlined" id="iconMenu" onclick="menubar()">menu</span>
         <menu id="navbar">
             <nav>
                 <ul>
@@ -30,5 +31,24 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quo inventore. Enim culpa delectus repellat quos neque, possimus quisquam doloribus, accusantium maxime, atque voluptatem porro aliquam placeat impedit dolorum fugit.</p>
         </article>
     </main>
+    <script>
+        function menubar() {
+            if (navbar.style.display == 'block') {
+                navbar.style.display = 'none'
+            }
+            else {
+                navbar.style.display = 'block'
+            }
+        }
+
+        function mudarTamanho() {
+            if (window.innerWidth >= 768) {
+                navbar.style.display = 'block'
+            }
+            else {
+                navbar.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

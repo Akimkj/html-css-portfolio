@@ -37,6 +37,7 @@ main  p {
     text-indent: 2rem;
     line-height: 1.6rem;
     margin-top: 1em;
+    text-align: justify;
 }
 
 
@@ -48,6 +49,10 @@ main  p {
 #ingredientes {
     align-self: flex-start;
     list-style-position: inside;
+}
+
+li {
+    margin-bottom: 1em;
 }
 
 

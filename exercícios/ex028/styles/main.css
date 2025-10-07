@@ -8,6 +8,71 @@
 
 html, body {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(152, 99, 6) url(../imgs/cupca.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0rem;
+}
+
+
+main  p {
+    text-indent: 2rem;
+    line-height: 1.6rem;
+    margin-top: 1em;
+}
+
+
+.window_img > img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#ingredientes {
+    align-self: flex-start;
+    list-style-position: inside;
+}
+
+
+footer {
+    background-color: #995d29;
+    width: 100%;
+    margin-top: 3em;
+    color: white;
+    border-radius: 1em 1em 0em 0em;
+    padding: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1040px) {
+    .window_img > img {
+        width: 698px;
+    }
+}
+
+
 

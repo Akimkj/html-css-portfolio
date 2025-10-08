@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 16px;
+}
+
+h1 {
+    font: var(--heading1);
+    color: var(--produto-color);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.192);
+    margin: 0em 1.5em 0.2em 0em;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > form {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 1.5em;
+}
+
+form > #iSearch {
+    margin-left: 5px;
+    width: 155px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+form:hover {
+    color: var(--produto-color);
+}
+
+#iSearch:hover, #iSearch:focus {
+    border: 1px solid var(--produto-color);
+}
+
+nav > a {
+    margin-right: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+nav > a:hover {
+    color: var(--produto-color);
+}
+
+nav #imgPerfil {
+    width: 50px;
+    border-radius: 50%;
+}

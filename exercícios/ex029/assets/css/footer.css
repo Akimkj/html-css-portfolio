@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em;
+    font: var(--paragraph-sm);
+}
+
+footer > p > a {
+    margin-left: 1em;
+}
